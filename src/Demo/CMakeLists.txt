@@ -7,9 +7,13 @@ set(CMAKE_UNITY_BUILD ON)
 set(CMAKE_CXX_STANDARD 17)
 
 if(${CMAKE_BUILD_TYPE} STREQUAL Release)
-    include_directories(../../Demo/generated/U-Urho/release/include)
+    include_directories(../../Demo/generated/U-Urho/release/include
+                        ../../Demo/generated/U-Urho/release/include/Urho3D/ThirdParty)
+    link_directories(../../Demo/generated/U-Urho/release/lib)
 elseif(${CMAKE_BUILD_TYPE} STREQUAL Debug)                    
-    include_directories(../../Demo/generated/U-Urho/debug/include)
+    include_directories(../../Demo/generated/U-Urho/debug/include
+                        ../../Demo/generated/U-Urho/debug/include/Urho3D/ThirdParty)
+    link_directories(../../Demo/generated/U-Urho/debug/lib)
 endif()
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
@@ -21,3 +25,13 @@ source_group(src FILES ${SRC})
 file(GLOB FILES_UNITY ${SRC} )
 
 add_executable(${PROJECT_NAME} ${FILES_UNITY})
+
+if(WIN32)
+    if(${CMAKE_BUILD_TYPE} STREQUAL Release)
+        target_link_libraries(${PROJECT_NAME} Urho3D)
+    else()
+        target_link_libraries(${PROJECT_NAME} Urho3D_d)
+    endif()
+else()
+    target_link_libraries(${PROJECT_NAME} Urho3D)
+endif()
