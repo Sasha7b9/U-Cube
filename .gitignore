@@ -13,3 +13,11 @@ TacticsVictory/out/debug/*.dll
 TacticsVictory/out/debug/*.exe
 TacticsVictory/out/release/*.dll
 TacticsVictory/out/release/*.exe
+
+Tankist/generated/*
+Tankist/out/debug/log/*
+Tankist/out/release/*
+Tankist/out/debug/*.dll
+Tankist/out/debug/*.exe
+Tankist/out/release/*.dll
+Tankist/out/release/*.exe
