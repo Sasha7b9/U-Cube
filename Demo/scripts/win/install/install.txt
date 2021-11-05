@@ -7,3 +7,6 @@
     b - git clone https://github.com/Sasha7b9/U-Cube.git
 2. Запустить ConEmu со стартовым скриптом ../../../../scripts/win/promt.bat
 3. Выполнить скрипт create_links.bat для создания символьных ссылок.
+4. Перейти в каталог urho для сборки U-Urho.
+    4.1 make.bat [debug | release] - сгенерировать проект Visual Studio 2019 для debug- или release- версии движка.
+    4.1 build.bat [debug | release] - собрать debug- или release версию движка.
