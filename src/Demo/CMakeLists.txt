@@ -5,7 +5,12 @@ project (Demo)
 set(CMAKE_UNITY_BUILD ON)
 
 include_directories(.
-                    ../U-Urho/Source)
+if(${CMAKE_BUILD_TYPE} STREQUAL Release)
+                    ../../Demo/generated/U-Urho/release/include
+else()
+                    ../../Demo/generated/U-Urho/debug/include
+endif()
+                    )
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
 
