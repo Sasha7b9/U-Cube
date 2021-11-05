@@ -1,0 +1,9 @@
+Для успешной сборки под Windows 10 необходимы следующие инструменты:
+- Visual Studio 2019
+- ConEmu
+
+1. Скачать(а) или клонировать(b) репозиторий:
+    a - https://github.com/Sasha7b9/U-Cube/archive/refs/heads/main.zip
+    b - git clone https://github.com/Sasha7b9/U-Cube.git
+2. Запустить ConEmu со стартовым скриптом ../../../../scripts/win/promt.bat
+3. Выполнить скрипт create_links.bat для создания символьных ссылок.
