@@ -12,9 +12,9 @@ goto HINT
 
 :BUILD
 set current_dir=%CD%
-cd ../../generated/%1/TankistU3D
+cd ../../../generated/Demo/%1
 @echo on
-MSBuild.exe TankistU3D.sln /p:Configuration=%configuration% /t:build -clp:ErrorsOnly;WarningsOnly -nologo -m
+MSBuild.exe Demo.sln /p:Configuration=%configuration% /t:build -clp:ErrorsOnly;WarningsOnly -nologo -m
 @echo off
 cd %current_dir%
 goto EXIT
