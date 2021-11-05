@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Audio\AudioCapturer.cpp" />
+    <ClCompile Include="src\Audio\Capture\main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Capture\TWTSound.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Capture\TWTThreads.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Player\main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\CommonFunctions.cpp" />
+    <ClCompile Include="src\Counters.cpp" />
+    <ClCompile Include="src\Game.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\GlobalVars.cpp" />
+    <ClCompile Include="src\Graphics\ImageT.cpp" />
+    <ClCompile Include="src\Graphics\SpriteT.cpp" />
+    <ClCompile Include="src\Graphics\ProgressBar.cpp" />
+    <ClCompile Include="src\GUI\Elements\DropDownListButtons.cpp" />
+    <ClCompile Include="src\GUI\Elements\Governor.cpp" />
+    <ClCompile Include="src\GUI\GameGUI.cpp" />
+    <ClCompile Include="src\GUI\WindowGameESC.cpp" />
+    <ClCompile Include="src\GUI\WindowSettings.cpp" />
+    <ClCompile Include="src\Network\ChatLog.cpp" />
+    <ClCompile Include="src\Network\Client.cpp" />
+    <ClCompile Include="src\Network\Chat.cpp" />
+    <ClCompile Include="src\Network\ClientTCP.cpp" />
+    <ClCompile Include="src\Network\Server.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Network\ServerTCP.cpp" />
+    <ClCompile Include="src\Network\SocketClientTCP.cpp" />
+    <ClCompile Include="src\Network\SocketServerTCP.cpp" />
+    <ClCompile Include="src\Objects\CameraUni.cpp" />
+    <ClCompile Include="src\Objects\Sight.cpp" />
+    <ClCompile Include="src\Objects\Vehicle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Objects\_Tank.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\Settings.cpp" />
+    <ClCompile Include="src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Tankist.cpp" />
+    <ClCompile Include="src\TankistHandlers.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Audio\AudioCapturer.h" />
+    <ClInclude Include="src\Audio\Capture\defines.h" />
+    <ClInclude Include="src\Audio\Capture\TWTAudio.h" />
+    <ClInclude Include="src\Audio\Capture\TWTPrefixWindows.h" />
+    <ClInclude Include="src\Audio\Capture\TWTSound.h" />
+    <ClInclude Include="src\Audio\Capture\TWTThreads.h" />
+    <ClInclude Include="src\CommonFunctions.h" />
+    <ClInclude Include="src\Core\Math.h" />
+    <ClInclude Include="src\Counters.h" />
+    <ClInclude Include="src\defines.h" />
+    <ClInclude Include="src\dox\01 Compiling.h" />
+    <ClInclude Include="src\dox\02 Plan.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\GlobalVars.h" />
+    <ClInclude Include="src\Graphics\ImageT.h" />
+    <ClInclude Include="src\Graphics\SpriteT.h" />
+    <ClInclude Include="src\Graphics\ProgressBar.h" />
+    <ClInclude Include="src\GUI\Elements\DropDownListButtons.h" />
+    <ClInclude Include="src\GUI\Elements\Governor.h" />
+    <ClInclude Include="src\GUI\GameGUI.h" />
+    <ClInclude Include="src\GUI\WindowGameESC.h" />
+    <ClInclude Include="src\GUI\WindowSettings.h" />
+    <ClInclude Include="src\Network\ChatLog.h" />
+    <ClInclude Include="src\Network\Client.h" />
+    <ClInclude Include="src\Network\Chat.h" />
+    <ClInclude Include="src\Network\ClientTCP.h" />
+    <ClInclude Include="src\Network\NetworkEvents.h" />
+    <ClInclude Include="src\Network\Server.h" />
+    <ClInclude Include="src\Network\ServerTCP.h" />
+    <ClInclude Include="src\Network\SocketClientTCP.h" />
+    <ClInclude Include="src\Network\SocketServerTCP.h" />
+    <ClInclude Include="src\Objects\CameraUni.h" />
+    <ClInclude Include="src\Objects\Sight.h" />
+    <ClInclude Include="src\Objects\Vehicle.h" />
+    <ClInclude Include="src\Objects\_Tank.h" />
+    <ClInclude Include="src\Settings.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\Tankist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Audio\Player\wavViewer.py" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02B4EDF3-3C95-4AD2-B1FF-F8D92AD04992}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TankistWaT</RootNamespace>
+    <ProjectName>Tankist</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\My\Tankist\source\ThirdParty\bass;C:\My\Tankist\source\ThirdParty\opus\include;C:\Urho3D-dbg\Source\ThirdParty;C:\Urho3D-dbg\Source;$(IncludePath)</IncludePath>
+    <OutDir>..\..\..\out\</OutDir>
+    <TargetName>Tankist_d</TargetName>
+    <LibraryPath>C:\My\Tankist\source\ThirdParty\bass;C:\My\Tankist\source\ThirdParty\opus\win32\VS2010\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\out\distr\</OutDir>
+    <TargetName>run</TargetName>
+    <LibraryPath>C:\My\Tankist\source\ThirdParty\bass;C:\My\Tankist\source\ThirdParty\opus\win32\VS2010\x64\Release;C:\Urho3D-dbg\generated\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Urho3D-dbg\Source\ThirdParty;C:\Urho3D-dbg\Source;C:\Urho3D-dbg\Source\ThirdParty\Bullet\src;C:\Urho3D-dbg\generated\Source;C:\Urho3D-dbg\generated\include\Urho3D\ThirdParty;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Urho3D-dbg\generated\include;C:\Urho3D-dbg\generated\include\Urho3D\ThirdParty;C:\My\Tankist\source\Tankist\common;C:\Urho3D-dbg\Source\ThirdParty\Bullet\src;C:\My\Tankist\source\Tankist;C:\My\Tankist\source\Tankist\Tankist\src;C:\My\Tankist\source\ThirdParty\bass;C:\My\Tankist\source\ThirdParty\opus\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;c:\Urho3D-dbg\generated\lib\Urho3D_d.lib;winmm.lib;imm32.lib;version.lib;ws2_32.lib;dbghelp.lib;d3d9.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;URHO3D_ANGELSCRIPT;URHO3D_FILEWATCHER;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PHYSICS;URHO3D_PROFILING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Urho3D-dbg\build\include;src\;C:\Urho3D-dbg\build\include\Urho3D\ThirdParty;C:\Urho3D-dbg\build\include\Urho3D\ThirdParty\Bullet;C:\Urho3D-dbg\build\include\Urho3D\ThirdParty\LuaJIT;..\;C:\Urho3D-dbg\generated\include\Urho3D\ThirdParty;C:\Urho3D-dbg\Source\ThirdParty\Bullet\src;C:\Urho3D-dbg\generated\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4514;4710;4820</DisableSpecificWarnings>
+      <AdditionalOptions>-MP %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>c:\Urho3D-dbg\generated\lib\Urho3D_d.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;ws2_32.lib;iphlpapi.lib;dbghelp.lib;dxgi.lib;dxguid.lib;kernel32.lib;winspool.lib;shell32.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/machine:x64 /STACK:100000000 /NODEFAULTLIB:libcmtd %(AdditionalOptions)</AdditionalOptions>
+      <ImportLibrary>c:\My\Tankist\out\Tankist_d.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>c:\Urho3D-dbg\build\include\Urho3D\ThirdParty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\My\Tankist\source\Tankist\Tankist\src;C:\Urho3D-rel\build\include;C:\Urho3D-rel\build\include\Urho3D\ThirdParty;C:\My\Tankist\source\Tankist\common;C:\My\Tankist\source\ThirdParty\bass;C:\My\Tankist\source\ThirdParty\opus\include;C:\Urho3D-dbg\build\include\Urho3D\ThirdParty\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4099;4100;4189;4251;4365;4464;4514;4571;4623;4625;4626;4668;4710;4711;4774;4820;5026;5027;5039</DisableSpecificWarnings>
+      <AdditionalOptions>-MP %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Urho3D-rel\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Urho3D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/STACK:200000000 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Network\Client.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\Server.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\Chat.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GlobalVars.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tankist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TankistHandlers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\AudioCapturer.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\WindowGameESC.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\WindowSettings.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Elements\DropDownListButtons.cpp">
+      <Filter>GUI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Settings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\Elements\Governor.cpp">
+      <Filter>GUI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\GameGUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\ChatLog.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\CameraUni.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Sight.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Capture\main.cpp">
+      <Filter>Audio\Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Capture\TWTSound.cpp">
+      <Filter>Audio\Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Capture\TWTThreads.cpp">
+      <Filter>Audio\Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\Player\main.cpp">
+      <Filter>Audio\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ProgressBar.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\ClientTCP.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\ServerTCP.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\SocketClientTCP.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Network\SocketServerTCP.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonFunctions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Counters.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\ImageT.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\SpriteT.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Vehicle.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\_Tank.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Network\Client.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\Server.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\Chat.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GlobalVars.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tankist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\AudioCapturer.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\WindowGameESC.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\WindowSettings.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\Elements\DropDownListButtons.h">
+      <Filter>GUI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Settings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\Elements\Governor.h">
+      <Filter>GUI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\NetworkEvents.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\GameGUI.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\ChatLog.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\CameraUni.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Sight.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dox\01 Compiling.h">
+      <Filter>_dox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\Capture\defines.h">
+      <Filter>Audio\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\Capture\TWTAudio.h">
+      <Filter>Audio\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\Capture\TWTPrefixWindows.h">
+      <Filter>Audio\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\Capture\TWTSound.h">
+      <Filter>Audio\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\Capture\TWTThreads.h">
+      <Filter>Audio\Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Math.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\ProgressBar.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\ClientTCP.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\ServerTCP.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\SocketClientTCP.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network\SocketServerTCP.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommonFunctions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Counters.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\defines.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\ImageT.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\SpriteT.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Vehicle.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\_Tank.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dox\02 Plan.h">
+      <Filter>_dox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Network">
+      <UniqueIdentifier>{a1773823-5867-488d-93c1-f3fc7c797076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{59ba811c-a0e0-4214-bebe-7036cda8608c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{5b2de937-77c7-4bb1-b1f7-382ce8130131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{3fc16836-c795-4edb-af92-11b257e6c803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Elements">
+      <UniqueIdentifier>{ee3d8181-5b6a-4b98-bffb-43997907c563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Capture">
+      <UniqueIdentifier>{e966dbe7-d292-4741-b830-b38451f5486c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Player">
+      <UniqueIdentifier>{9fc40ba8-5be7-4821-8689-834627d57936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{80d2db3e-767b-420f-9e3c-e3bb21ee7ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{04bc1f36-f3ba-4c0c-a3eb-b52f1d7ad4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{8bb93e43-1a22-493f-8dc1-091670bd5066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_dox">
+      <UniqueIdentifier>{d1872df9-9968-4fe5-953c-d908cede36f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Audio\Player\wavViewer.py">
+      <Filter>Audio\Player</Filter>
+    </None>
+  </ItemGroup>
+</Project>
