@@ -72,16 +72,18 @@ void CustomLogic::FixedUpdate(float timeStep)
 
 	if (!mat) return;
 
+#ifndef M_PI
 #define  M_PI   3.14159265358979323846f
+#endif
 
 	float loopPlayTime = 4.0f;
 	Time* time = GetSubsystem<Time>();
 	float elapsed = time->GetElapsedTime();
 
 
-	float r = sinf((elapsed / loopPlayTime) * (2 * M_PI)) * 0.5f + 0.25f;
-	float g = sinf((elapsed / loopPlayTime + 0.33333333f) * 2 * M_PI) * 0.5f + 0.25f;
-	float b = sinf((elapsed / loopPlayTime + 0.66666666f) * 2 * M_PI) * 0.5f + 0.25f;
+	float r = sinf((elapsed / loopPlayTime) * (2 * (float)M_PI)) * 0.5f + 0.25f;
+	float g = sinf((elapsed / loopPlayTime + 0.33333333f) * 2 * (float)M_PI) * 0.5f + 0.25f;
+	float b = sinf((elapsed / loopPlayTime + 0.66666666f) * 2 * (float)M_PI) * 0.5f + 0.25f;
 	float invNorm = 1.0f / (r + g + b);
 
 	//r *= invNorm;
