@@ -16,7 +16,7 @@ elseif(${CMAKE_BUILD_TYPE} STREQUAL Debug)
     link_directories(../../Demo/generated/U-Urho/debug/lib)
 endif()
 
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS  /STACK:100000000")
 
 file(GLOB SRC    *.cpp *.h *.inl)
 
