@@ -13,8 +13,10 @@ goto HINT
 
 :BUILD
 @echo on
-MSBuild.exe generated/%1/Urho3D.sln /p:Configuration=%configuration% /t:build -clp:ErrorsOnly;WarningsOnly -nologo -m
-copy generated\%1\bin\*.dll ..\TacticsVictory\out\%1 /Y
+MSBuild.exe ../../../../generated/U-Urho/%1/Urho3D.sln /p:Configuration=%configuration% /t:build -clp:ErrorsOnly;WarningsOnly -nologo -m
+cd ../../../../
+copy generated\U-Urho\%1\bin\*.dll out\%1 /Y
+cd scripts/win/install/urho
 @echo off
 goto EXIT
 
