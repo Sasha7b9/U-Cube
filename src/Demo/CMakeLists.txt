@@ -7,14 +7,14 @@ set(CMAKE_UNITY_BUILD ON)
 set(CMAKE_CXX_STANDARD 17)
 
 if(${CMAKE_BUILD_TYPE} STREQUAL Release)
-    include_directories(../../Demo/generated/U-Urho/release/include
-                        ../../Demo/generated/U-Urho/release/include/Urho3D/ThirdParty)
-    link_directories(../../Demo/generated/U-Urho/release/lib)
-elseif(${CMAKE_BUILD_TYPE} STREQUAL Debug)                    
-    include_directories(../../Demo/generated/U-Urho/debug/include
-                        ../../Demo/generated/U-Urho/debug/include/Urho3D/ThirdParty)
-    link_directories(../../Demo/generated/U-Urho/debug/lib)
+    set(TYPE_BUILD release)
+elseif(${CMAKE_BUILD_TYPE} STREQUAL Debug)
+    set(TYPE_BUILD debug)
 endif()
+
+include_directories(../../Demo/generated/U-Urho/${TYPE_BUILD}/include
+                    ../../Demo/generated/U-Urho/${TYPE_BUILD}/include/Urho3D/ThirdParty)
+link_directories(../../Demo/generated/U-Urho/${TYPE_BUILD}/lib)
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS  /STACK:100000000")
 
