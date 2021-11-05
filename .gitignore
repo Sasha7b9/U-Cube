@@ -2,3 +2,14 @@ Demo/generated/*
 Demo/out/debug/log/*
 Demo/out/release/*
 Demo/out/debug/*.dll
+Demo/out/debug/*.exe
+Demo/out/release/*.dll
+Demo/out/release/*.exe
+
+TacticsVictory/generated/*
+TacticsVictory/out/debug/log/*
+TacticsVictory/out/release/*
+TacticsVictory/out/debug/*.dll
+TacticsVictory/out/debug/*.exe
+TacticsVictory/out/release/*.dll
+TacticsVictory/out/release/*.exe
