@@ -1,0 +1,4 @@
+doc       - документация по проекту
+generated - debug- и release- версии исполняемых файлов
+out       - debug- и release- версии сборки
+scripts   - скрипты для сборки под Linux и Windows
