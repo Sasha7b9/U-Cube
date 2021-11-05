@@ -24,7 +24,7 @@ rmdir generated\Demo\%1 /S /Q
 
 cd src
 @echo on
-cmake ..\src\Demo -Bgenerated\Demo\%1 -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_GENERATOR="Visual Studio 16 2019"
+cmake ..\src\Demo -Bgenerated\Demo\%1 -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_GENERATOR="Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=%BUILD_TYPE%
 cd %current_dir%
 @echo off
 
